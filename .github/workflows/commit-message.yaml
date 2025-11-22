@@ -14,4 +14,4 @@ jobs:
             - name: print commit mssage
               run:
                   echo "commit message"
-                  echo"${{github.rvrnt.head_commit.message}}
+                  echo"${{github.event.head_commit.message}}
