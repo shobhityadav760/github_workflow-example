@@ -2,7 +2,7 @@ name: show commit message
 on: 
    push:
          branches:
-                - main
+                - master
 jobs: 
     print-message:
         runs-on: ubuntu-latest
