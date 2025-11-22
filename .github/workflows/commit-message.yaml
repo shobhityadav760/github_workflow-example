@@ -1,0 +1,17 @@
+name: show commit message
+on: 
+   push:
+         branches:
+                - main
+jobs: 
+    print-message:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: checkout code
+              uses: action/checkout@v5
+
+            - name: print commit mssage
+              run:
+                  echo "commit message"
+                  echo"${{github.rvrnt.head_commit.message}}
